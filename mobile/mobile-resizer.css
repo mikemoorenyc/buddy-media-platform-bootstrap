@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:700,900);
+*,
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body,
+.ui-overlay-a {
+  line-height: 1.2;
+  margin: 0;
+}
+body.ui-mobile-viewport{
+  text-shadow: none;
+}
+#mod_hide {
+	display: none;
+}
+#main-wrap {
+	position:relative;
+	max-width: 640px;
+	margin: 0 auto;
+}
+#main {
+	position: static;
+
+}
+.module {
+	position: relative;
+	clear: both;
+}
+body > #bmdialog, body > #bmshare, body > #fb-root {
+	display: none;
+}
+body > #bmdialog.ui-page-active, body > #bmshare.ui-page-active, body > #fb-root {
+	display: block;
+}
+/*modal RESET*/
+.bmhelper .ui-content {
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+
+/*photogallery resets*/
+.moduleSlideshow .photogallery_quad_gallery_each_a {
+	margin: 0;
+}
+.moduleSlideshow .photogallery_quad_gallery_each_img_wrapper img {
+	display: block;
+	max-width: 100% !important;
+	margin: 0 auto;
+}
+.moduleSlideshow .photogallery_swipe_gallery_wrapper {
+	overflow: hidden;
+	position: relative;
+}
+.moduleSlideshow .swipe_gallery_wrapper {
+	height: auto !important;
+}
+.moduleSlideshow .photogallery_swipe_gallery {
+	position: relative !important;
+	overflow: hidden;
+}
+
+
+.moduleSlideshow .photogallery_swipe_gallery li > div[style*="clear"] {
+	height: 0 !important;
+}
+.moduleSlideshow .swipe_pagination_dots {
+	position: static;
+	text-align: center;
+}
+.moduleSlideshow .swipe_pagination_dots li {
+	float: none;
+	display:inline-block;
+	vertical-align: top;
+	margin: 0 3px;
+}
+/*YouTube gallery resets*/
+.moduleYouTube .youtube_video_video .youtube_video_link img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.moduleYouTube .youtube_video_information_wrapper_controls {
+	width: auto;
+	overflow: hidden;
+	display: block;
+}
+.moduleYouTube .youtube_video_information_title_wrapper {
+	display: block;
+}
+.moduleYouTube .swipe_gallery_wrapper {
+	height: auto !important; 
+}
+.moduleYouTube .youtube_videos {
+	position: relative !important;
+	overflow: hidden;
+}
+.moduleYouTube .swipe_pagination_dots {
+	position: static;
+	text-align: center;
+}
+.moduleYouTube .swipe_pagination_dots li {
+	float: none;
+	display:inline-block;
+	vertical-align: top;
+	margin: 0 3px;
+}
+
+/*prodglobal reset*/
+.moduleContent .productgallery_grid_image_wrapper img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+/*productgallery quad reset*/
+ .productgallery_quad_swipe_gallery_wrapper {
+	display: block;
+	overflow: hidden;
+}
+.productgallery_quad_swipe_gallery_wrapper .productgallery_quad_gallery_each_a {
+	margin: 0;
+}
+.productgallery_quad_swipe_gallery_wrapper .swipe_gallery_wrapper {
+	height: auto !important; 
+}
+.productgallery_quad_swipe_gallery_wrapper .productgallery_quad_swipe_gallery {
+	position: relative !important;
+	overflow: hidden;
+}
+.productgallery_quad_swipe_gallery_wrapper .swipe_pagination_dots {
+	position: static;
+	text-align: center;
+}
+.productgallery_quad_swipe_gallery_wrapper .swipe_pagination_dots li {
+	float: none;
+	display:inline-block;
+	vertical-align: top;
+	margin: 0 3px;
+}
+.productgallery_quad_swipe_gallery_wrapper .productgallery_quad_swipe_gallery li > div[style*="clear"] {
+	height: 0 !important;
+}
+
+/*productgallery single reset*/
+.productgallery_single_swipe_gallery_wrapper {
+	display: block;
+	overflow: hidden;
+}
+
+.productgallery_single_swipe_gallery_wrapper .swipe_gallery_wrapper {
+	height: auto !important; 
+}
+.productgallery_single_swipe_gallery_wrapper .productgallery_single_swipe_gallery {
+	position: relative !important;
+	overflow: hidden;
+}
+.productgallery_single_swipe_gallery_wrapper .swipe_pagination_dots {
+	position: static;
+	text-align: center;
+}
+.productgallery_single_swipe_gallery_wrapper .swipe_pagination_dots li {
+	float: none;
+	display:inline-block;
+	vertical-align: top;
+	margin: 0 3px;
+}
+
+
+#mod_hide {
+	display: none;
+}
+
+/*=============== CUSTOM STYLES ===============*/
+body.ui-overlay-a {
+
+}
+
+#main {
+
+}
+#main-wrap {
+
+}
+.module {
+
+}
+.module .moduleContent {
+
+}
+.module .moduleHeader {
+
+}
+
+
+
+
+

@@ -4,7 +4,7 @@ buddy-media-platform-bootstrap
 Templates &amp; Bootstraps for developing on the Buddy Media Platform.
 
 Uses
-====
+-----
 
 Boilerplate and template CSS to make developing on the platform easier. Also includes some common .js we include just to clean up some of the code. 
 

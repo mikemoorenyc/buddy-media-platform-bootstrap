@@ -1,0 +1,92 @@
+/*
+Poll
+Horizontal Poll with 3 images
+and 
+the same results
+and
+radio buttons/percentage is in between image and item title
+ ------   ------   ------   ------
+|      | |      | |      | |      |
+|      | |      | |      | |      |
+ ------   ------   ------   ------
+    *        *        *        *
+  item     item      item     item
+--------------------------------------------------------------*/
+
+/* answers */
+#mod_poll .pollAnswers,
+#mod_poll .poll_answers {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+/* item */
+#mod_poll .pollAnswer,
+#mod_poll .poll_answer_result {
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 265px;
+}
+#mod_poll .poll_answer_result {
+    margin: 0 20px;
+}
+/* label */
+#mod_poll .pollAnswer label,
+#mod_poll .poll_answer_result .answer_label {
+    font-size: 14px;
+    display: block;
+    line-height: 1.3em;
+    text-align: center;
+    width: 100%;
+}
+#mod_poll label br { 
+    display: none;
+}
+/* image */
+#mod_poll .pollAnswer img,
+#mod_poll .poll_answer_result img {
+    margin-bottom: 45px;
+    max-width: 100%;
+    width: 100%;
+}
+#mod_poll .poll_answer_result img {
+    margin-bottom: 45px;
+}
+/* radio Button */
+#mod_poll .pollAnswer input {
+    bottom: 5px;
+    left: 50%;
+    margin-left: -7px;
+    position: absolute;
+}
+/* results */
+#mod_poll .answer_bar_outer {
+    display: none;
+}
+#mod_poll .answer_data {
+    bottom: 5px;
+    font-size: 20px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100% !important;
+}
+/* controls */
+#mod_poll .pollControls {
+    margin-top: 0;
+    text-align: center;
+}
+/* submit button */
+#mod_poll .bmButton { 
+    float: none;
+}
+/* view Results */
+#mod_poll .viewResults {
+    display: none;
+}
+#mod_poll .pollControls .pollTakeAgain {}
+/* go Back Link */
+#mod_poll .pollControls .pollTakeAgain {}

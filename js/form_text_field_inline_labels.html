@@ -1,0 +1,58 @@
+<!--
+
+This is some simple JS & CSS to allow for inline labels on text fields.
+Example: 
+
+http://apps.facebook.com/prod_preview_iframe/p.php?fb_sig_profile_id=6067784583&bm_fb_api_key=86bd2963b823654f63481f25467bef0f&bm_fb_app_id=126784814144687&bm_sig_locale=zz_ZZ&preview=true&nocache=true
+
+or screenshot if this is down:
+https://d3hok70xjqsuiy.cloudfront.net/assets/prod/37569/inlinelabels_1354825348.jpg
+
+This is a way to have the inline labels without changing the "value" attribute of the input, would break our
+form's required fieldprogramming.
+
+-->
+
+<!-- JAVASCRIPT -->
+<script>
+$(document).ready(function() { 
+  $('.fieldText input').focus(function() { 
+      $(this).prev().hide();
+  });
+  
+  $('.fieldText input').blur(function() {
+    if ($(this).val() == '') {
+      $(this).prev().show();
+    } 
+  });
+}); 
+</script>
+
+<!-- CSS -->
+<style>
+.fieldText {
+  position:relative;
+}
+.fieldText input {
+	width:202px; height:25px;
+	padding:3px;
+	line-height:19px;
+	border:1px solid #a9b2bf;
+	border-radius:5px;
+	font-size:12px;
+	font-weight:normal;
+	color:#7c7c7c;
+	font-family:Arial, sans-serif;
+}
+.fieldText label {
+	position:absolute;
+	display:block;
+	margin:0;
+	left:6px; top:0;
+	line-height:25px;
+	font-size:12px;
+	font-weight:normal;
+	color:#7c7c7c;
+	cursor:text;
+}	
+</style>

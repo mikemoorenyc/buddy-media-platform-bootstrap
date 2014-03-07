@@ -1,0 +1,16 @@
+<script type="text/javascript">
+
+// adds the <span> tag around each element in the fan count number string...
+
+$(function(){
+
+	var characters = $("span.pledgeShareCount").text().split("");
+
+	$("span.pledgeShareCount").empty();
+	$.each(characters, function(i, el) {
+		$("span.pledgeShareCount").append("<span class="+i+">"+el+"</span");
+	});
+
+});
+
+</script>

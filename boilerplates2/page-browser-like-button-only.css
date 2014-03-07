@@ -1,0 +1,32 @@
+/*
+Page Browser
+--------------------------------------------------------------*/ 
+/* content */
+#mod_pageBrowser .moduleContent {}
+/* item */
+#mod_pageBrowser .item { 
+  border: 0; 
+}
+/* details */
+#mod_pageBrowser .pageDetailsContainer { 
+  width: 142px; 
+}
+#mod_pageBrowser .shareContainer { 
+  position: static; 
+}
+#mod_pageBrowser .pageRank,
+#mod_pageBrowser .pageLogo,
+#mod_pageBrowser .pageLogo img { display: none; }
+/* like button */
+#mod_pageBrowser .pageDetails {
+  padding: 0;
+  margin: 0;
+}
+#mod_pageBrowser .likeButtonIframeContainer {
+  height: 27px;
+  width: 100px;
+  overflow: hidden;
+}
+*+html #mod_pageBrowser .likeButtonIframeContainer {
+    width: 49px; /*ie7 only*/
+}

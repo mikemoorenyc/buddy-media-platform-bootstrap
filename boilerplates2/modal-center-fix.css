@@ -1,0 +1,7 @@
+/*
+Centered modal fix ( 520px )
+--------------------------------------------------------------*/
+.ui-dialog {
+  left: 50% !important;
+  margin-left: -260px;
+}

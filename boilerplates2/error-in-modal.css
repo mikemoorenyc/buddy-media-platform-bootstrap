@@ -1,0 +1,16 @@
+/* Modal Error
+   ------------------------------ */
+
+/* Validation */
+[id$="validation_dialog_header"],
+[id$="validation_dialog_content"],
+[id$="validation_dialog_content"] a {
+    color: #e40000;
+}
+[id$="validation_dialog_header"] {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+[id$="validation_dialog_content"] {
+    padding-bottom: 10px;
+}

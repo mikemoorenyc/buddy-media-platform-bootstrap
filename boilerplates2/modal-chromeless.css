@@ -1,0 +1,26 @@
+/* Chromeless Modal
+   ---------------------------------------------- */
+
+.ui-dialog {
+    background: #fff;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+}
+
+
+/* Dialog content
+   ---------------------------------------------- */
+
+.ui-dialog .ui-dialog-content {
+    background: none;
+    border: none;
+    padding: 0 !important;
+}
+
+
+/* Buttons
+   ---------------------------------------------- */
+.ui-dialog .ui-dialog-buttonpane {
+    background: none;
+}

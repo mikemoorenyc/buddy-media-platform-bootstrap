@@ -1,0 +1,23 @@
+<!--This jquery/js script appends editable/html Terms Of Service
+	under Fangate Image, so people can read and click on link to 
+	read external Terms Of Service before click "Like".
+	
+	1. create HTML sapplet with id - mod_fangate_tos and insert
+		any text/links in html section.
+	2. add this script in any HTML sapplet, can be in the same(mod_fangate_tos)
+	3. switch to Non-Fans View and target with Inspect element to style
+	
+	// TO-DO: we can move any sapplet outside the tab for Non-Fan view
+	-->
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var tos = $('.moduleContent', '#mod_fangate_tos').html();
+		$('#mod_fangate_tos').hide();
+	
+		var fangate = $('#fanpage_fangate');
+		var tos_wrapper = $('<div />').attr('class', 'fangate_tos_wrapper');
+		tos_wrapper.append(tos);
+		fangate.append(tos_wrapper);
+	});
+</script>

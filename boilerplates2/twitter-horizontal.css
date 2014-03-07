@@ -1,0 +1,93 @@
+/*
+Twitter
+
+3 items horizontal
+ ------   ------   ------ 
+|      | |      | |      |
+|      | |      | |      |
+ ------   ------   ------ 
+--------------------------------------------------------------*/
+
+#mod_twitter .items {
+    position: relative;
+}
+
+
+
+/* item */
+#mod_twitter .item {
+    background: #5eacc5;
+    border: none;
+    float: left;
+    margin: 0;
+    margin-left: 3%;
+    padding: 0;
+    padding: 10px;
+    position: relative;
+    width: 30%;
+}
+#mod_twitter .item:first-child {
+    margin-left: 0;
+}
+
+
+
+
+#mod_twitter .item.even {
+  padding: 0 6px;
+}
+#mod_twitter .item.odd {
+  padding: 0 0 0 12px;
+}
+#mod_twitter .item.odd:first-child {
+  padding: 0 12px 0 0;
+}
+/* item links */
+#mod_twitter .item a { 
+  text-decoration: none;
+}
+/*#mod_twitter .item a:hover { color: #ca0023; }*/
+/* thumb */
+#mod_twitter .authorImage {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 0 10px;
+}
+/* tweet */
+#mod_twitter .description {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  line-height: 1.3em;
+}
+#mod_twitter .temp_description_none {
+  text-align: left;
+  padding: 0;
+}
+/* post info line */
+#mod_twitter .postinfo,
+#mod_twitter .postinfo a {
+  font-size: 14px !important;
+  color: #666;
+  font-weight: normal;
+  text-decoration: none;
+}
+#mod_twitter .postinfo {
+  margin: 10px 0 0 0;
+}
+#mod_twitter .posted,
+#mod_twitter .on,
+#mod_twitter .date {
+  display: none;
+}
+#mod_twitter .callToActionContainer a {
+  font-family: 'Myriad Pro', Helvetica, Arial sans-serif;
+  font-size: 18px;
+  color: #222;
+  background: url(https://d3hok70xjqsuiy.cloudfront.net/assets/prod/32750/icotwitter_1348509105.png) no-repeat left center;
+  padding: 0 0 0 30px;
+}
+#mod_twitter .callToActionContainer a:hover {
+  color: #6d6e71;
+}

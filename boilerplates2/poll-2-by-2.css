@@ -1,0 +1,84 @@
+/* 
+Poll half-size 2x2
+needs a lot of debuging
+------------------------------ */
+#mod_poll .moduleHeader h3 {
+    text-align: left;
+    padding: 0;
+}
+/* question */
+#mod_poll .pollQuestion {
+    margin: 0 0 20px;
+}
+/* answer */
+#mod_poll .pollAnswer,
+#mod_poll .poll_answer_result {
+    width: 148px;
+    float: left;
+    clear: none;
+    position: relative;
+    margin: 0 0 0 23px;
+    padding: 0 0 35px;
+}
+#mod_poll .poll_answer_result {
+    padding: 0 0 17px;
+}
+#mod_poll .pollAnswer1,
+#mod_poll .pollAnswer3,
+#mod_poll .pollAnswer5 {
+    margin: 0 0 0 5px;
+}
+#mod_poll .pollAnswer label,
+#mod_poll .answer_label {
+    display: block;
+    text-align: center;
+}
+#mod_poll .pollAnswer input[type="radio"] {
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    margin: 0 0 0 -5px;
+}
+#mod_poll .pollAnswer label img,
+#mod_poll .answer_label img {
+    width: 148px;
+    height: 102px;
+    margin: 0 0 10px;
+    border: solid 3px #fff;
+}
+#mod_poll .pollAnswer label br {
+    display: none;
+}
+/* post poll */
+#mod_poll .answer_bar_outer {
+    display: none;
+}
+/* percents */
+#mod_poll .answer_data {
+    float: none;
+    display: block;
+    text-align: center;
+    font: 18px/1 'nivea', arial, helvetica, sans-serif;
+    color: #001780;
+}
+/* controls */
+#mod_poll .viewResults,
+#mod_poll .bmButton {
+    float: right;
+}
+/* view results */
+#mod_poll .viewResults {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 10px;
+    margin: 7px 10px;
+}
+/* back button */
+#mod_poll .pollTakeAgain {
+  background: url(https://d3hok70xjqsuiy.cloudfront.net/themes/716/btn-back_1354112137.png) no-repeat;
+  width: 81px;
+  height: 28px;
+  float: right;
+  display: block;
+  text-indent: -9999em;
+}

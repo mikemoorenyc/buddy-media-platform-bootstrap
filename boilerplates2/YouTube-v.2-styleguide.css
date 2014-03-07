@@ -1,0 +1,126 @@
+/* YouTube New
+   ---------------------------------------- */
+
+/* menubar */
+.moduleYouTubev2 .menubar {
+    padding: 0;
+}
+/* clearfix ul */
+.moduleYouTubev2 .menubar ul:after,
+.moduleYouTubev2 .menubar ul:before {
+    content: '';
+    display: table;
+}
+.moduleYouTubev2 .menubar ul:after { clear: both; }
+.moduleYouTubev2 .menubar ul li {
+    margin: 0;
+}
+
+/* thumbs container - frame */
+.moduleYouTubev2 .thumbscontainer {
+    background: yellow;
+    font-size: 0;
+    height: auto;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+/* "clear-fix" this frame */
+.moduleYouTubev2 .thumbscontainer:after,
+.moduleYouTubev2 .thumbscontainer:before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.moduleYouTubev2 .thumbscontainer:after { clear: both; }
+
+/* thumbs in frame */
+.moduleYouTubev2 .thumbscontainer > .video_thumbs {
+    bottom: auto;
+    display: inline-block !important;
+    left: auto;
+    float: none;
+    padding: 0 0 10px;
+    position: relative;
+    text-align: left;
+    top: auto;
+    right: auto;
+    width: 49.5%;     /* <============= change this value */
+    vertical-align: top;
+}
+/* break point for thumbs */
+@media screen and (min-width: 800px) {
+
+    .moduleYouTubev2 .thumbscontainer > .video_thumbs {
+        width: 32.5%;
+    }
+}
+
+/* thumb title */
+.moduleYouTubev2 .thumbscontainer .pagination_title {
+    cursor: default;    /* this is not clickable element */
+    padding: 0 5px 10px;     /* <================= this is tha same value as padding above on .video_thumbs ^^ */
+    width: 100%;
+}
+
+/* images */
+.moduleYouTubev2 .thumbscontainer > .video_thumbs img {
+    width: 100%;
+}
+
+/* back button and share */
+.moduleYouTubev2 .videocontainer_wrapper .back_share_wrapper {
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+/* back button - nullify all styles */
+.moduleYouTubev2 .back_to_menu_btn.ltgray {
+    margin: 0;
+
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.moduleYouTubev2 .back_to_menu_btn.ltgray,
+.moduleYouTubev2 .back_to_menu_btn.ltgray:hover,
+.moduleYouTubev2 .back_to_menu_btn.ltgray:active {
+    background: none;
+    border: none;
+    filter: none;
+}
+.moduleYouTubev2 .videocontainer_wrapper .back_to_menu_btn .icon {
+    background: url(https://d3hok70xjqsuiy.cloudfront.net/themes/991/btn-close_1375205742.png);
+    height: 27px;
+    margin: 0;
+    width: 27px;
+}
+.moduleYouTubev2 .videocontainer_wrapper .back_to_menu_btn:hover .icon {
+    opacity: 0.85;
+}
+
+/* share buttons */
+.moduleYouTubev2 .shareOptions li > a {
+    margin: 0 0 0 5px !important;
+}
+
+/* main video */
+.moduleYouTubev2 .playerContainer {
+    padding: 0 0 10px;
+}
+
+/* video title */
+.moduleYouTubev2 .video_title {
+    margin: 0 0 5px;
+}
+
+/* video description */
+.moduleYouTubev2 .video_description {
+    margin: 0;
+    max-height: none;
+    overflow: visible;
+}

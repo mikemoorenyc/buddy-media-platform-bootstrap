@@ -1,0 +1,13 @@
+/*
+Selection
+--------------------------------------------------------------*/
+::selection {
+  text-shadow: none;
+  background: #49c7fc;
+  color: #ffffff;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: #49c7fc;
+  color: #ffffff;
+}

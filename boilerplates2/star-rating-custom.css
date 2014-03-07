@@ -1,0 +1,9 @@
+/*
+Custom Star Rating
+---------------------------------- */
+#bm_dialog .starRating,
+#bm_dialog .starRating li a:hover,
+.starRating,
+.starRating li a:hover {
+    background-image: url(https://d3hok70xjqsuiy.cloudfront.net/themes/716/stars1_1354030961.png);
+}

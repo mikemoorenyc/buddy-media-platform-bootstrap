@@ -1,0 +1,55 @@
+/*
+Rss Blog - horizontal items
+--------------------------------------------------------------*/
+#mod_blog {
+}
+/* content */
+#mod_blog .moduleContent {
+  padding-bottom: 7px;
+}
+/* items */
+#mod_blog .items {
+  background: url(https://d3hok70xjqsuiy.cloudfront.net/assets/prod/33536/bgdropshadow_1349458131.jpg) no-repeat center top;
+}
+#mod_blog .itemCategory {
+  position: relative;
+  height: 350px;
+  overflow: auto;
+  background: url(https://d3hok70xjqsuiy.cloudfront.net/assets/prod/33536/bgdropshadow02_1349458073.jpg) no-repeat center bottom;
+}
+/* item */
+#mod_blog .item {
+  border-top: solid #d7d7d7 1px;
+  margin: 12px 0 0 0;
+  padding: 12px 0 25px 0;
+  position: relative;
+}
+#mod_blog .item:first-child {
+  border: none;
+  margin: 0;
+}
+/* title */
+#mod_blog .title,
+#mod_blog .title a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#mod_blog .title {
+  margin: 0 0 5px;
+}
+/* description */
+#mod_blog .description {
+  line-height: 1.3em;
+}
+/* post info */
+#mod_blog .postInfo {
+  color: #666;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* read more */
+#mod_blog .learnMore {
+  color: #bf0000;
+}

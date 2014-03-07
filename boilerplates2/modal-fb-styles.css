@@ -1,0 +1,113 @@
+/* Form builder modal
+   ---------------------------------------- */
+
+.ui-dialog .ui-dialog-content form {
+    overflow: hidden;
+}
+/* row */
+.ui-dialog .formBuilderRow {
+    clear: none;
+    float: left;
+    margin: 0 0 10px;
+    padding: 0 4px;
+    width: 50%;
+}
+/* label */
+.ui-dialog .formBuilderRow label {
+    color: #084e8b;
+    font-family: 'Open Sans Condensed';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+/* text input */
+.ui-dialog input[type="text"] {
+    padding: 5px 3px;
+    margin: 0;
+    width: 100%;
+}
+/* Select boxes */
+.ui-dialog .formBuilderRow select {
+    width: 100%;
+}
+/* Terms of service-like field */
+.ui-dialog .fieldCheckbox {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.ui-dialog .fieldCheckbox input {
+    display: block;
+    float: left;
+    margin: 2px 5px 0 0;
+}
+.ui-dialog .fieldCheckbox label {
+    display: block;
+    float: left;
+    margin: 0;
+    text-align: left;
+    width: 300px;
+}
+.ui-dialog .fieldCheckbox label,
+.ui-dialog .fieldCheckbox label a {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Open Sans';
+}
+.ui-dialog .fieldCheckbox label a {
+    text-decoration: underline;
+}
+/* Image upload */
+.ui-dialog .fieldImage {
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+/* Max file size */
+.ui-dialog .fieldImage .fuxdProxy {
+    height: auto !important;
+    position: relative;
+}
+.ui-dialog .fieldImage .fuxdProxy.loaded,
+.ui-dialog .fieldImage .fuxdProxy.loading {
+    height: 50px !important;
+}
+/* Browse Button */
+.ui-dialog .formBuilderRow .fuxdButton {
+    background: #791d70;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    color: #fff;
+    filter: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed';
+    padding: 2px 20px;
+    text-transform: uppercase;
+    width: auto;
+}
+/* File upload experimental css */
+.ui-dialog .ajaxUploader .fileName {
+    display: none;
+}
+/*#bm_dialog .ajaxUploader .fileName {
+  padding: 5px 10px;
+  margin: 0;
+  max-width: none;
+  overflow: hidden;
+  max-height: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+  width: 325px;
+  height: 30px;
+  top: 0px;
+  left: -345px;
+  background: #F2F2F2;
+  border: solid #bdbebd 1px;
+  font-size: 12px;
+}*/

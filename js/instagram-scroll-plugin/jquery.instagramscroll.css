@@ -1,0 +1,99 @@
+/*
+Instagram
+--------------------------------------------------------------*/
+#mod_instagram {
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+/*
+Header
+*/
+#mod_instagram .moduleHeader h3 {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: Arial, sans-serif;
+  color: #464646;
+}
+#mod_instagram .moduleHeader b {
+  background: url(https://d3hok70xjqsuiy.cloudfront.net/assets/prod/32205/titlenewinstagram_1347982040.png) no-repeat;
+  display: block;
+  height: 48px;
+  text-indent: -999em;
+}
+/*
+Content
+*/
+#mod_instagram .moduleContent {
+  padding-left: 15px;
+  position: relative;
+}
+/*
+Items
+*/
+#mod_instagram .items {
+  overflow: hidden;
+}
+/*
+Item
+*/
+#mod_instagram .item {
+  margin: 5px 5px;
+  padding: 0;
+  float: left;
+}
+#mod_instagram .item a {
+  width: 212px;
+}
+#mod_instagram .item a img {
+  max-width: none;
+  width: 212px;
+  padding: 5px;
+  -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transition: box-shadow 0.3s ease-out; 
+  -moz-transition: box-shadow 0.3s ease-out; 
+  -o-transition: box-shadow 0.3s ease-out; 
+  transition: box-shadow 0.3s ease-out; 
+}
+#mod_instagram .item a img:hover {
+  -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.6);
+}
+/*
+Learn More link
+*/
+#mod_instagram .item .learnMore { display: none; }
+/*
+Images Reel
+*/
+.viewport {
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  height: 230px;
+}
+.itemsReel {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: left 0.5s ease-in-out; 
+  -moz-transition: left 0.5s ease-in-out; 
+  -o-transition: left 0.5s ease-in-out; 
+  transition: left 0.5s ease-in-out; 
+}
+/*
+Navigation
+*/
+.navigation .prev,
+.navigation .next {
+  position: absolute;
+  top: 100px;
+}
+.navigation .prev {
+  left: 20px;
+}
+.navigation .next {
+  right: 8px;
+}

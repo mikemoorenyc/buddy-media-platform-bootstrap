@@ -1,0 +1,27 @@
+/*
+Terms of service field
+--------------------------------------------------------------*/
+#bm_dialog .fieldCheckbox {
+  display: block;
+  width: 100%;
+  clear: both;
+  margin: 0;
+  padding: 3px;
+  float: left;
+}
+#bm_dialog .formBuilderRow.fieldCheckbox input {
+  margin: 0 5px 0 0;
+  float: left;
+  display: block;
+}
+#bm_dialog .formBuilderRow.fieldCheckbox label {
+  font-size: 10px;
+  float: left;
+  margin: 0;
+  display: block;
+  width: 300px;
+}
+#bm_dialog .formBuilderRow.fieldCheckbox label a {
+  font-size: 10px;
+  text-decoration: none;
+}

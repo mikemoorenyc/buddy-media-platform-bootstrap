@@ -1,0 +1,78 @@
+<!-- example
+     use it in html navigation -->
+<ul>
+  <li><a href="http://yahoo.com" title="Home">Home</a></li>
+  <li><a href="http://google.com" title="Blog">Blog</a></li>
+  <li><a href="#mod_autoScroll" title="PhotoGallery" rel="scrollPageTo">Photogallery</a></li>
+  <li><a href="#mod_4f577bc6f412d" title="Contact" rel="scrollPageTo">Contact</a></li>
+  <li><a href="#mod_twitter" title="Contact" rel="scrollPageTo">Twitter</a></li>
+</ul>
+
+<script>
+
+/*!
+ * jQuery plugin
+ * Scroll Page to element with ID, jQuery plugin
+ * How to use:
+ * - put rel="scrollPageTo" in link, so plugin will disable default click and redirect
+ * - in href attribute use #DOM-element-ID. for example: 
+ *   <a href="#mod_rules" rel="scrollPageTo">Rules</a>
+ *   <a href="#coolPLaceOnPage" rel="scrollPageTo">Cool Place</a> ... somewhere on page: <p id="coolPLaceOnPage">this is cool place<p>
+ * - inside $(window).load(funcition() {}); call setTimeout and call plugin on all links on page or on links inside some DOM element
+ * - make sure you are viewing page without p.php
+ */
+
+; (function( $ ) {
+    "use strict";
+
+    $.fn.scrollPageTo = function() {
+      return this.each(function() {
+        var href, modPos;
+
+        if ( $( this ).attr( 'rel' ) === 'scrollPageTo' ) {
+          href = $( this ).attr( 'href' ).substr(1);
+          modPos = Math.ceil( $( '#' + href ).offset().top );
+          
+          $( this ).on( 'click', function() {
+            FB.Canvas.getPageInfo(function( info ) { 
+              FB.Canvas.scrollTo( 0, modPos );
+            });
+            return false;
+          })
+        }
+      });
+    };
+  }( jQuery ));
+
+  $(window).load(function() {
+    setTimeout(function() {
+
+      $( 'a' ).scrollPageTo();
+      
+    }, 100);
+  });
+
+</script>
+
+
+
+<!-- example
+     use it as link in text -->
+<p>Sweet tootsie roll sugar plum biscuit halvah <a href="#cheesecake" rel="scrollPageTo">cheesecake</a> gummi bears bear claw. Cheesecake chupa chups sweet apple pie jelly beans sweet roll muffin. Danish chocolate dessert jelly beans marshmallow gummi bears. Powder danish cookie. Marshmallow tiramisu cupcake gingerbread. Biscuit faworki halvah.</p>
+
+...
+
+<p id="cheesecake">Cheesecake place</p>
+
+...
+
+<script>
+// minified version
+;(function($){"use strict";$.fn.scrollPageTo=function(){return this.each(function(){var href,modPos;if($(this).attr('rel')==='scrollPageTo'){href=$(this).attr('href').substr(1);modPos=Math.ceil($('#'+href).offset().top);$(this).on('click',function(){FB.Canvas.getPageInfo(function(info){FB.Canvas.scrollTo(0,modPos);});return false;})}});};}(jQuery));
+
+  $(window).load(function() {
+    setTimeout(function() {
+      $( 'a' ).scrollPageTo();
+    }, 100);
+  });
+</script>

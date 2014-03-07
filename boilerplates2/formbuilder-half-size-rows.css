@@ -1,0 +1,198 @@
+/* Signup Form
+Rows are HALF-sized
++
+some extra fields:
+- textarea
+- image upload
+- DOB
+- TOS
+--------------------------------------------------------------*/
+#mod_enter {}
+/* form */
+#mod_enter form {
+    display: block;
+    overflow: hidden;
+}
+
+
+/* row */
+#mod_enter .form_row {
+    clear: none;
+    float: left;
+    margin: 0 0 10px;
+    padding: 0 10px;
+    width: 50%;
+}
+
+
+/* text field */
+#mod_enter .field_text input {
+    margin: 0;
+    width: 100%;
+}
+
+
+/* labels */
+#mod_enter .form_row label {
+    margin: 0 0 3px;
+    padding: 0;
+    font-weight: normal;
+}
+#mod_enter .form_row label a {
+    text-decoration: underline;
+}
+
+
+/* select boxes */
+#mod_enter .form_row select {
+    margin: -1px 0 0 0;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+}
+
+
+/* terms of service */
+#mod_enter .field_checkbox {
+    clear: both;
+    display: block;
+    float: left;
+    margin: 0 0 10px;
+    padding: 0 10px;
+    width: 100%;
+}
+#mod_enter .field_checkbox input {
+    display: block;
+    float: left;
+    margin: 0 5px 0 0;
+}
+#mod_enter .field_checkbox label,
+#mod_enter .field_checkbox label a {
+    color: #6b6b6b;
+    font-size: 10px;
+}
+#mod_enter .field_checkbox label {
+    display: block;
+    float: left;
+    margin: 0;
+    width: 400px;
+}
+#mod_enter .field_checkbox label a {
+    text-decoration: underline;
+}
+
+
+/* description field (textarea) */
+.moduleFormBuilder .formBuilderRow.fieldTextarea {
+  width: 100%;
+}
+.moduleFormBuilder .formBuilderRow.fieldTextarea textarea {
+  width: 95%;
+  height: 60px;
+  padding: 3px;
+}
+
+
+
+
+/* date of birth */
+#mod_enter .field_dob {
+    clear: both;
+    position: relative;
+    width: 100%;
+}
+#mod_enter .field_dob select {
+    margin-left: 2%;
+    width: 32%;
+    white-space: nowrap;
+}
+#mod_enter .field_dob [id$="_month"] {
+    margin-left: 0;
+}
+
+
+
+
+/* Image upload */
+.moduleFormBuilder .fieldImage {
+  width: 100%;
+  clear: both;
+  margin-top: 10px;
+}
+.moduleFormBuilder .fieldImage label {
+  font-size: 12px;
+  font-weight: bold;
+}
+/* browse button */
+.moduleFormBuilder .formBuilderRow .fuxdButton {
+  filter: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 7px 25px;
+  float: right;
+  width: auto;
+  cursor: pointer;
+}
+/* file name */
+.moduleFormBuilder .ajaxUploader .fileName {
+  padding: 5px 10px;
+  margin: 0;
+  max-width: none;
+  overflow: hidden;
+  max-height: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+  width: 325px;
+  height: 30px;
+  top: 0px;
+  left: -345px;
+  background: #F2F2F2;
+  border: solid #bdbebd 1px;
+  font-size: 12px;
+}
+/* section break */
+.moduleFormBuilder .fieldSectionBreak {
+    width: 100%;
+    clear: both;
+}
+.moduleFormBuilder .fieldSectionBreak h4 {
+    display: none;
+}
+.moduleFormBuilder .fieldSectionBreak p { }
+/* field radio selection: Are you going to vacation? * Yes * No */
+#mod_form .fieldRadio {
+  width: 100%;
+  position: relative;
+}
+#mod_form .fieldRadio [value="yes"],
+#mod_form .fieldRadio [value="no"],
+#mod_form .fieldRadio .radioOptionLabel {
+  position: absolute;
+  top: 3px;
+  font-size: 11px;
+}
+#mod_form .fieldRadio [value="yes"] {
+  left: 185px;
+}
+#mod_form .fieldRadio [for$="_yes"] {
+  left: 202px;
+}
+#mod_form .fieldRadio [value="no"] {
+  left: 250px;
+}
+#mod_form .fieldRadio [for$="_no"] {
+  left: 266px;
+}
+
+
+/* asterisk */
+#mod_enter .requiredField { display: none; }
+
+
+/* form Controls */
+#mod_enter .formControls {
+    margin: 0;
+    float: left;
+    width: 100%;
+}

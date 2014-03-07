@@ -1,0 +1,77 @@
+/* Poll
+   ex: https://apps.facebook.com/prod_preview_iframe/p.php?category_id=2324&bm_fb_app_id=146934845378292
+   ---------------------------------------------- */
+
+/* answers */
+#mod_poll .pollAnswers,
+#mod_poll .poll_answers {
+    margin: 0;
+    width: 100%;
+}
+/* item */
+#mod_poll .pollAnswer,
+#mod_poll .poll_answer_result {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-left: 410px;
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+}
+/* label */
+#mod_poll .pollAnswer label,
+#mod_poll .poll_answer_result .answer_label {
+    display: block;
+}
+/* image */
+#mod_poll .pollAnswer img,
+#mod_poll .poll_answer_result img {
+    margin-left: -410px;
+    width: 405px;
+}
+/* copy */
+#mod_poll .pollAnswer label b,
+#mod_poll .poll_answer_result .answer_label b {
+    font-weight: 200;
+    left: 445px;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+}
+#mod_poll .poll_answer_result .answer_label b {
+    left: 470px;
+}
+/* radio Button */
+#mod_poll .pollAnswer input {
+    left: 410px;
+    margin-top: -7px;
+    position: absolute;
+    top: 50%;
+}
+/* results */
+#mod_poll .answer_bar_outer {
+    display: none;
+}
+#mod_poll .answer_data {
+    font-size: 20px;
+    left: 410px;
+    margin-top: -14px;
+    position: absolute;
+    top: 50%;
+}
+/* controls */
+#mod_poll .pollControls {
+    margin-right: 25px;
+    overflow: hidden;
+}
+/* submit button */
+#mod_poll .bmButton,
+#mod_poll .pollTakeAgain {
+    float: right;
+}
+/* view Results */
+#mod_poll .viewResults {
+    display: none;
+}

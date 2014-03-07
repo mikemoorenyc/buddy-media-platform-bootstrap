@@ -1,0 +1,37 @@
+<!--in this example I am taking the pledge count and turning it into a bar graph.
+	additionaly I am doing some math to show the remaining amount of pledges 
+	until my goal. in this case this is 25,000 pledges. also added a function
+	to add commas here because they don't exist by defualt :(  -->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		function addCommas(nStr){
+			nStr += '';
+			x = nStr.split('.');
+			x1 = x[0];
+			x2 = x.length > 1 ? '.' + x[1] : '';
+			var rgx = /(\d+)(\d{3})/;
+
+			while (rgx.test(x1)) {
+				x1 = x1.replace(rgx, '$1' + ',' + '$2');
+			}
+			return x1 + x2;
+		};
+
+		var count = $(".count").text();
+
+		bar = Math.floor(count/25000);
+		remaining = Math.floor(25000-count);
+
+		$(".remainingCount").text(addCommas(remaining));
+		$(".bar").width(bar+"%");
+
+	});
+</script>
+
+<div class="remaining"><span class="remainingCount"></span></div>
+<div class="graphContainer bmclearfix">
+	<span class="bar"></span>
+</div>
+

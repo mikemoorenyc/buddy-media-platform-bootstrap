@@ -1,0 +1,67 @@
+/*
+Pledge Sapplet defaults
+--------------------------------------------------------------*/
+/* content */
+#mod_pledge .moduleContent {
+  background: url(https://d3hok70xjqsuiy.cloudfront.net/assets/prod/32205/bgheadergreenthing_1347460573.png) no-repeat left top;
+  padding: 15px 0 0 70px;
+  min-height: 140px;
+}
+/* offer title */
+#mod_pledge .offerTitle {
+  line-height: 1.5em;
+  width: 65%;
+}
+/* description */
+#mod_pledge .offerInstructions {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+/* items */
+#mod_pledge .items {
+}
+#mod_pledge .item {
+  margin: 0;
+}
+/* image */
+#mod_pledge .pledgeImageContainer,
+#mod_pledge .pledgedImageContainer {
+  position: absolute;
+  top: -90px;
+  right: -4px;
+}
+#mod_pledge .pledgeImageContainer img,
+#mod_pledge .pledgedImageContainer img {
+  max-width: 230px;
+  max-height: 238px;
+}
+/* item meta */
+#mod_pledge .itemMeta {
+  display: none;
+}
+/* button */
+#mod_pledge .pledgeButtonContainer {
+  text-align: right;
+  margin: -12px 240px 0 0;
+}
+/* pledge total share */
+#mod_pledge .pledgeShareTotal {
+  border: none;
+  border: none;
+  text-align: right;
+  margin: -5px 225px 0 0;
+  padding: 0;
+}
+#mod_pledge .pledgeShareCount {
+  font-weight: bold;
+  font-size: 21px;
+}
+#mod_pledge .pledgeSharePrefix,
+#mod_pledge .pledgeShareSuffix {
+}
+#mod_pledge .pledgeShareSuffix {
+}
+#mod_pledge .pledgeShareCount {
+}

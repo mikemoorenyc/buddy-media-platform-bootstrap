@@ -1,0 +1,11 @@
+/*
+Adjustments for IE file upload field
+-------------------------------------- */
+.ajaxUploader .fuxdInput {
+  width: 160px\0/ !important;
+  font-size: 30px\0/;
+  outline: none;
+}
+.ajaxUploader .fuxdInput:focus {
+  outline: none;
+}

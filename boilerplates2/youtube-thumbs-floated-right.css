@@ -1,0 +1,85 @@
+/*
+Youtube
+Video on left hand + thumbs floated to the right
+--------------------------------------------------------------*/
+
+/* video */
+#mod_youtube .videoContainer {
+    float: left;
+    position: relative;
+    width: 489px;
+}
+#mod_youtube .videoContainer h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+#mod_youtube .videoContainer .youtubeChannel_description {
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.5em;
+}
+/* share container */
+#mod_youtube .shareContainer {
+  margin: 0;
+  position: absolute;
+  top: 333px;
+  right: 0;
+}
+/* thumbs */
+#mod_youtube .thumbsContainer {
+    float: right;
+    padding: 0;
+    text-align: center;
+    width: 106px;
+}
+#mod_youtube .thumbsContainer ul {
+    margin-top: 0;
+}
+#mod_youtube .thumbsContainer ul li {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+/* only thumb styles */
+#mod_youtube .page_number {
+    border: none;
+    height: 64px;
+    overflow: hidden;
+    position: relative;
+    width: 106px;
+}
+#mod_youtube .page_number.hide {
+    display: none;
+}
+#mod_youtube .page_number:hover,
+#mod_youtube .page_number.current {
+    border: solid #db3b40 3px;
+}
+#mod_youtube .page_number img {
+    left: 0;
+    max-width: none;
+    position: absolute;
+    top: -13px;
+    width: 118px;
+}
+/* nav */
+#mod_youtube .youtube_prev,
+#mod_youtube .youtube_next {
+    margin-bottom: 10px !important;
+}
+#mod_youtube .youtube_prev a,
+#mod_youtube .youtube_next a {
+    background: url(https://d3hok70xjqsuiy.cloudfront.net/assets/prod/35400/btnnavvert_1364916069.png);
+    margin-left: auto;
+    margin-right: auto;
+}
+#mod_youtube .youtube_prev a {
+    background-position: -62px top;
+}
+#mod_youtube .youtube_next a {
+    background-position: -62px -32px;
+}

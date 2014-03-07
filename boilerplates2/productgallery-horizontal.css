@@ -1,0 +1,24 @@
+/* Product Gallery Horizontal
+   ------------------------------------------- */
+
+/* items */
+#mod_products .jcarousel-clip {
+    margin: 0 auto;
+    width: 700px !important;  /* <--- ( item width + item margin ) * visible items (5) */
+}
+/* item */
+#mod_products ul li {
+    width: 100px !important;
+    overflow: hidden;
+    margin: 0 20px;
+    text-align: center;
+    cursor: pointer;
+}
+/* item name */
+#mod_products .itemName {
+    margin: 5px 0 0 0;
+    display: block;
+}
+#mod_products ul li:hover .itemName {
+    color: #868686;
+}

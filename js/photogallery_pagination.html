@@ -1,0 +1,30 @@
+<!-- This fixes the annoying "bug" when you use thumbnails where the advancement controls scroll through the thumbnails rather than the photos themselves. Update CSS ID where necessary. -->
+
+<script type="text/javascript">
+$('#mod_fangal').find('ul.slideshow_pagination li.slideshow_next a').bind('click', function () {
+    var current = $('#mod_fangal').find('ul.slideshow_pagination li.current');
+    var index = $('ul.slideshow_pagination li.slideshow_page').index(current);
+    if(index<$('ul.slideshow_pagination li').length) {
+        $($('ul.slideshow_pagination li.slideshow_page')[index+1]).find('a').click();
+    } else {
+        $($('ul.slideshow_pagination li.slideshow_page')[0]).find('a').click();
+    }
+
+    return false;
+});
+
+$('#mod_fangal').find('ul.slideshow_pagination li.slideshow_prev a').bind('click', function (event) {
+    var view,
+        current = $('#mod_fangal').find('ul.slideshow_pagination li.current'),
+        index = $('ul.slideshow_pagination li.slideshow_page').index(current);
+    if(index>-1) {
+        view = index-1;
+        $($('ul.slideshow_pagination li.slideshow_page')[index-1]).find('a').click();
+    } else {
+        event.stopImmediatePropagation();
+    }
+
+    return false;
+});
+
+</script>

@@ -1,0 +1,53 @@
+/*
+Photo gallery
+Compact Gallery Layout without tumbs
+--------------------------------------------------------------*/
+#mod_photos {
+}
+/* contnet */
+#mod_photos .moduleContent {
+  padding: 0;
+}
+/* main image */
+#mod_photos .imageWrapper,
+#mod_photos .imageWrapper img {
+  width: 100%;
+}
+/* photometa */
+#mod_photos .photoMeta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 30px 10px;
+  background: url(https://d3hok70xjqsuiy.cloudfront.net/assets/prod/28593/bgmodule_1351003875.png);
+}
+/* share container */
+#mod_photos .shareControls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0 0 0 130px;
+}
+#mod_photos .share_and_hide:before {
+  content: 'Post to Facebook';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #879ac4;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  white-space: nowrap;
+}
+/* main nav */
+#mod_photos .slideshow_photo_container .slideshow_prev,
+#mod_photos .slideshow_photo_container .slideshow_next {
+  top: 45%;
+  z-index: 9999;
+}
+#mod_photos .slideshow_photo_container .slideshow_prev {
+  left: 15px;
+}
+#mod_photos .slideshow_photo_container .slideshow_next {
+  right: 15px;
+}

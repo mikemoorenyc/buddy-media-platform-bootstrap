@@ -1,0 +1,37 @@
+<!--in this example i designed a categories type setting for the youtube sapplet. what
+    this does is allows you to switch between several different youtube sapplets based on
+    which one you select from the drop down. this same example could be used for any other sapplet
+    eseentially, but i have some extra code in here to make sure we stop the flash element
+    before hiding and showing another.-->
+
+
+<form>
+<select name="nav" id="nav">
+	<option value="mod_youtube5">DIRECTV Cinema</option>	
+    <option value="mod_youtube4">HD DVR</option>
+    <option value="mod_youtube2">DVR Basics</option>
+	<option value="mod_youtube3">Menu & Guide Options</option>
+    <option value="mod_youtube8">Wireless Connection Kit</option>
+	<option value="mod_youtube6">DIRECTV.com</option>
+	<option value="mod_youtube7">Troubleshooting</option>
+</select>
+</form>
+<script type="text/javascript">
+
+    $("#nav").change(function () {
+        
+        var active_pl = $('div[id^="mod_youtube"]:visible iframe');
+
+        if(active_pl.length > 0){
+            var iframe_src =  active_pl.attr('src').replace("autoplay=1", "autoplay=0");
+            active_pl.attr('src', iframe_src);
+        }
+
+        $('div[id^="mod_youtube"]').hide();
+        $('#' + $(this).val()).show();
+
+    })
+
+    .change();
+
+</script>

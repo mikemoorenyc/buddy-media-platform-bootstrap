@@ -1,0 +1,67 @@
+/*
+Photo gallery with 8 thumbnails
+It's "Compact" in the settings
+--------------------------------------------------------------*/
+#mod_photos {
+}
+/* header */
+#mod_photos .moduleHeader {
+}
+/* contnet */
+#mod_photos .moduleContent {
+  padding: 5px 51px 0 50px;
+}
+/* main image */
+#mod_photos .photoMeta {
+  display: none;
+}
+/* main nav */
+#mod_photos .slideshow_photo_container .slideshow_prev,
+#mod_photos .slideshow_photo_container .slideshow_next {
+  top: 0;
+}
+#mod_photos .slideshow_photo_container .slideshow_prev {
+  left: -13px;
+}
+#mod_photos .slideshow_photo_container .slideshow_next {
+  right: -13px;
+}
+/* thumbs */
+#mod_photos .modulePhotocarousel .jcarousel-clip {
+  width: 560px !important;  /* <--- ( item width + item margin ) * visible items (8) */
+}
+#mod_photos .carouselContainer {
+  margin: 3px 0 0 0;
+}
+#mod_photos .carouselContainer ul li {
+  width: 65px !important;
+  height: 49px;
+  overflow: hidden;
+  /*border: solid #a0000f 1px;*/
+  border: solid #fff 1px;
+}
+#mod_photos .carouselContainer ul li:hover {
+  border-color: #e5173f;
+}
+#mod_photos .carouselContainer ul li img {
+  width: 103px;
+  height: 47px;
+  max-width: none;
+  opacity: 0.6;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+#mod_photos .carouselContainer ul img:hover {
+}
+#mod_photos .carouselContainer ul img:hover,
+#mod_photos .carouselContainer ul li.current img {
+  opacity: 1;
+}
+/* thumbs nav */
+#mod_photos .carouselContainer .slideshow_gallery_prev,
+#mod_photos .carouselContainer .slideshow_gallery_next {
+  display: none !important;
+}
